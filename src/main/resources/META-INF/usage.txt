@@ -1,0 +1,14 @@
+# P6spy for Spring Boot Starter
+# Copyright (c) 2022 Yookue Ltd. All rights reserved.
+# https://yookue.com
+
+
+spring:
+    datasource:
+        url: 'jdbc:p6spy:mysql://xxx'
+        driver-class-name: com.p6spy.engine.spy.P6SpyDriver
+
+    p6spy:
+        appender: 'com.p6spy.engine.spy.appender.Slf4JLogger'
+        log-message-format: 'com.yookue.springstarter.p6spy.strategy.CompactSingleLineFormat'
+        reload-properties: false
