@@ -34,7 +34,7 @@ class MockApplicationTest {
     @Test
     void queryNone() {
         String methodName = StackTraceWraps.getExecutingMethodName();
-        String result = service.queryDb1();
+        String result = service.queryDb();
         log.info("{}: Query result data is '{}'", methodName, result);
         Assertions.assertNotNull(result);
     }

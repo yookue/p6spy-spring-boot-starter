@@ -28,7 +28,7 @@ class MockApplicationService {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
-    public String queryDb1() {
+    public String queryDb() {
         String sql = "select test_name from t_test_table t where t.test_code = 'tab1'";
         return jdbcTemplate.queryForObject(sql, String.class);
     }
