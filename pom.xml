@@ -22,7 +22,7 @@
 
     <groupId>com.yookue.springstarter</groupId>
     <artifactId>p6spy-spring-boot-starter</artifactId>
-    <version>2.7.18</version>
+    <version>3.3.1</version>
 
     <name>${project.artifactId}</name>
     <description>P6spy for Spring Boot Starter</description>
@@ -35,7 +35,7 @@
     </organization>
 
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>17</java.version>
         <file.encoding>UTF-8</file.encoding>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
@@ -47,18 +47,18 @@
         <project.build.resourceEncoding>${file.encoding}</project.build.resourceEncoding>
         <project.reporting.outputEncoding>${file.encoding}</project.reporting.outputEncoding>
 
-        <spring-boot.version>2.7.18</spring-boot.version>
+        <spring-boot.version>3.3.1</spring-boot.version>
 
         <p6spy.version>3.9.2</p6spy.version>
-        <plexus-spring-util.version>${spring-boot.version}</plexus-spring-util.version>
+        <plexus-spring-util.version>3.3.1.1</plexus-spring-util.version>
 
-        <javadoc-docent-maven-plugin.version>1.8.2</javadoc-docent-maven-plugin.version>
-        <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
-        <maven-install-plugin.version>2.5.2</maven-install-plugin.version>
-        <maven-jar-plugin.version>3.2.2</maven-jar-plugin.version>
-        <maven-javadoc-plugin.version>3.6.2</maven-javadoc-plugin.version>
-        <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
-        <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
+        <javadoc-docent-maven-plugin.version>2.0.0</javadoc-docent-maven-plugin.version>
+        <maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
+        <maven-install-plugin.version>3.1.2</maven-install-plugin.version>
+        <maven-jar-plugin.version>3.4.2</maven-jar-plugin.version>
+        <maven-javadoc-plugin.version>3.6.3</maven-javadoc-plugin.version>
+        <maven-resources-plugin.version>3.3.1</maven-resources-plugin.version>
+        <maven-source-plugin.version>3.3.1</maven-source-plugin.version>
         <maven-gpg-plugin.version>3.1.0</maven-gpg-plugin.version>
         <central-publishing-maven-plugin.version>0.5.0</central-publishing-maven-plugin.version>
     </properties>
@@ -113,10 +113,6 @@
             <artifactId>spring-boot-autoconfigure</artifactId>
             <exclusions>
                 <exclusion>
-                    <groupId>jakarta.annotation</groupId>
-                    <artifactId>jakarta.annotation-api</artifactId>
-                </exclusion>
-                <exclusion>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-starter-logging</artifactId>
                 </exclusion>
@@ -170,10 +166,6 @@
                 <exclusion>
                     <groupId>org.assertj</groupId>
                     <artifactId>assertj-core</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>jakarta.annotation</groupId>
-                    <artifactId>jakarta.annotation-api</artifactId>
                 </exclusion>
                 <exclusion>
                     <groupId>jakarta.xml.bind</groupId>
@@ -239,9 +231,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-install-plugin</artifactId>
                 <version>${maven-install-plugin.version}</version>
-                <configuration>
-                    <createChecksum>true</createChecksum>
-                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -277,6 +266,9 @@
                     <notimestamp>true</notimestamp>
                     <quiet>true</quiet>
                     <skip>false</skip>
+                    <additionalJOptions>
+                        <additionalJOption>-J-Duser.language=en</additionalJOption>
+                    </additionalJOptions>
                     <archive>
                         <manifest>
                             <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
