@@ -22,10 +22,10 @@
 
     <groupId>com.yookue.springstarter</groupId>
     <artifactId>p6spy-spring-boot-starter</artifactId>
-    <version>3.4.2</version>
+    <version>3.4.3</version>
 
     <name>${project.artifactId}</name>
-    <description>P6spy for Spring Boot Starter</description>
+    <description>Yookue P6spy for Spring Boot Starter</description>
     <url>https://github.com/yookue/p6spy-spring-boot-starter</url>
     <inceptionYear>2022</inceptionYear>
 
@@ -47,10 +47,10 @@
         <project.build.resourceEncoding>${file.encoding}</project.build.resourceEncoding>
         <project.reporting.outputEncoding>${file.encoding}</project.reporting.outputEncoding>
 
-        <spring-boot.version>3.4.2</spring-boot.version>
+        <spring-boot.version>3.4.3</spring-boot.version>
 
         <p6spy.version>4.0.1</p6spy.version>
-        <plexus-spring-util.version>3.4.2</plexus-spring-util.version>
+        <plexus-spring-util.version>3.4.3</plexus-spring-util.version>
 
         <javadoc-docent-maven-plugin.version>2.0.2</javadoc-docent-maven-plugin.version>
         <maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
