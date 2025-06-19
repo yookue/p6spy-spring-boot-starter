@@ -47,7 +47,11 @@ See the `NOTICE.txt` file for required notices and attributions.
 
 ## Donation
 
-You like this package? Then [donate to Yookue](https://yookue.com/public/donate) to support the development.
+You like this package? Then [donate to us](https://yookue.com/donation) to support the development.
+
+## Copyright
+
+Beijing Yookue Network Technology Ltd.
 
 ## Website
 
