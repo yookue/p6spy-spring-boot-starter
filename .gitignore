@@ -1,4 +1,8 @@
 ﻿
+# macOS
+**/._*
+**/.DS_Store
+
 # Compiled class file
 *.class
 
@@ -30,7 +34,6 @@ tmp/
 *.bak
 *.swp
 *~.nib
-*/.DS_Store
 */thumbs.db
 
 # Eclipse
