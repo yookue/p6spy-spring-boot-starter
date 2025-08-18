@@ -21,8 +21,8 @@ import java.util.Map;
 import org.apache.commons.lang3.BooleanUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.InitializingBean;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBooleanProperty;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.util.ClassUtils;
@@ -48,7 +48,7 @@ import lombok.RequiredArgsConstructor;
  */
 @Configuration(proxyBeanMethods = false)
 @ConditionalOnClass(value = P6SpyDriver.class)
-@ConditionalOnProperty(prefix = P6spyAutoConfiguration.PROPERTIES_PREFIX, name = "enabled", havingValue = "true", matchIfMissing = true)
+@ConditionalOnBooleanProperty(prefix = P6spyAutoConfiguration.PROPERTIES_PREFIX, name = "enabled", matchIfMissing = true)
 @EnableConfigurationProperties(value = P6spyProperties.class)
 @RequiredArgsConstructor
 @SuppressWarnings({"JavadocDeclaration", "JavadocLinkAsPlainText"})
