@@ -8,7 +8,7 @@ Spring Boot application integrates p6spy print SQL logs quickly.
 
 ```xml
     <dependency>
-        <groupId>com.yookue.springstarter</groupId>
+        <groupId>cn.unikue.springstarter</groupId>
         <artifactId>p6spy-spring-boot-starter</artifactId>
         <version>LATEST</version>
     </dependency>
@@ -25,13 +25,13 @@ spring:
         driver-class-name: com.p6spy.engine.spy.P6SpyDriver
     p6spy:
         appender: com.p6spy.engine.spy.appender.Slf4JLogger
-        log-message-format: com.yookue.springstarter.p6spy.strategy.CompactSingleLineFormat
+        log-message-format: cn.unikue.springstarter.p6spy.strategy.CompactSingleLineFormat
         reload-properties: false
 ```
 
 ## Document
 
-- Github: https://github.com/yookue/p6spy-spring-boot-starter
+- Github: https://github.com/unikueltd/p6spy-spring-boot-starter
 - P6spy github: https://github.com/p6spy/p6spy
 - P6spy configurations: https://p6spy.readthedocs.io/en/latest/configandusage.html
 
@@ -47,12 +47,12 @@ See the `NOTICE.txt` file for required notices and attributions.
 
 ## Donation
 
-You like this package? Then [donate to us](https://yookue.com/donation) to support the development.
+You like this package? Then [donate to us](https://unikue.cn/donation) to support the development.
 
 ## Copyright
 
-Beijing Yookue Network Technology Ltd.
+Beijing Unikue Network Technology Ltd.
 
 ## Website
 
-- Yookue: https://yookue.com
+- Unikue: https://unikue.cn

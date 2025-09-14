@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2022 Yookue Ltd. All rights reserved.
+ * Copyright (c) 2022 Unikue Ltd. All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.yookue.springstarter.p6spy.config;
+package cn.unikue.springstarter.p6spy.config;
 
 
 import java.util.Map;
@@ -30,12 +30,12 @@ import org.springframework.util.ReflectionUtils;
 import com.p6spy.engine.spy.P6ModuleManager;
 import com.p6spy.engine.spy.P6SpyDriver;
 import com.p6spy.engine.spy.P6SpyOptions;
-import com.yookue.commonplexus.javaseutil.annotation.PropertyAlias;
-import com.yookue.commonplexus.javaseutil.constant.StringVariantConst;
-import com.yookue.commonplexus.springutil.util.AnnotationUtilsWraps;
-import com.yookue.commonplexus.springutil.util.ClassUtilsWraps;
-import com.yookue.commonplexus.springutil.util.ReflectionUtilsWraps;
-import com.yookue.springstarter.p6spy.property.P6spyProperties;
+import cn.unikue.commonplexus.javaseutil.annotation.PropertyAlias;
+import cn.unikue.commonplexus.javaseutil.constant.StringVariantConst;
+import cn.unikue.commonplexus.springutil.util.AnnotationUtilsWraps;
+import cn.unikue.commonplexus.springutil.util.ClassUtilsWraps;
+import cn.unikue.commonplexus.springutil.util.ReflectionUtilsWraps;
+import cn.unikue.springstarter.p6spy.property.P6spyProperties;
 import lombok.RequiredArgsConstructor;
 
 

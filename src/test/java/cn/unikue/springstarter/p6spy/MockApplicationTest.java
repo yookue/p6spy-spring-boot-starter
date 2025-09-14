@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2022 Yookue Ltd. All rights reserved.
+ * Copyright (c) 2022 Unikue Ltd. All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.yookue.springstarter.p6spy;
+package cn.unikue.springstarter.p6spy;
 
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import com.yookue.commonplexus.javaseutil.util.StackTraceWraps;
+import cn.unikue.commonplexus.javaseutil.util.StackTraceWraps;
 import lombok.extern.slf4j.Slf4j;
 
 

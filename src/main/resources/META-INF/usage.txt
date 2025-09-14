@@ -1,6 +1,6 @@
 # P6spy for Spring Boot Starter
-# Copyright (c) 2022 Yookue Ltd. All rights reserved.
-# https://yookue.com
+# Copyright (c) 2022 Unikue Ltd. All rights reserved.
+# https://unikue.cn
 
 
 spring:
@@ -10,5 +10,5 @@ spring:
 
     p6spy:
         appender: 'com.p6spy.engine.spy.appender.Slf4JLogger'
-        log-message-format: 'com.yookue.springstarter.p6spy.strategy.CompactSingleLineFormat'
+        log-message-format: 'cn.unikue.springstarter.p6spy.strategy.CompactSingleLineFormat'
         reload-properties: false

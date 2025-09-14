@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2022 Yookue Ltd. All rights reserved.
+ * Copyright (c) 2022 Unikue Ltd. All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.yookue.springstarter.p6spy.property;
+package cn.unikue.springstarter.p6spy.property;
 
 
 import java.io.Serializable;
@@ -24,9 +24,9 @@ import com.p6spy.engine.spy.P6SpyOptions;
 import com.p6spy.engine.spy.appender.MessageFormattingStrategy;
 import com.p6spy.engine.spy.appender.P6Logger;
 import com.p6spy.engine.spy.appender.Slf4JLogger;
-import com.yookue.commonplexus.javaseutil.annotation.PropertyAlias;
-import com.yookue.springstarter.p6spy.config.P6spyAutoConfiguration;
-import com.yookue.springstarter.p6spy.strategy.CompactSingleLineFormat;
+import cn.unikue.commonplexus.javaseutil.annotation.PropertyAlias;
+import cn.unikue.springstarter.p6spy.config.P6spyAutoConfiguration;
+import cn.unikue.springstarter.p6spy.strategy.CompactSingleLineFormat;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
