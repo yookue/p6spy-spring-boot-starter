@@ -22,7 +22,7 @@
 
     <groupId>cn.unikue.springstarter</groupId>
     <artifactId>p6spy-spring-boot-starter</artifactId>
-    <version>3.5.5</version>
+    <version>3.5.14</version>
 
     <name>${project.artifactId}</name>
     <description>Unikue P6spy for Spring Boot Starter</description>
@@ -47,20 +47,20 @@
         <project.build.resourceEncoding>${file.encoding}</project.build.resourceEncoding>
         <project.reporting.outputEncoding>${file.encoding}</project.reporting.outputEncoding>
 
-        <spring-boot.version>3.5.5</spring-boot.version>
+        <spring-boot.version>3.5.14</spring-boot.version>
 
-        <p6spy.version>4.1.0</p6spy.version>
-        <plexus-spring-util.version>3.5.5</plexus-spring-util.version>
+        <p6spy.version>4.1.2</p6spy.version>
+        <plexus-spring-util.version>3.5.14</plexus-spring-util.version>
 
-        <javadoc-docent-maven-plugin.version>2.1.0</javadoc-docent-maven-plugin.version>
-        <maven-compiler-plugin.version>3.14.0</maven-compiler-plugin.version>
+        <javadoc-docent-maven-plugin.version>2.1.2</javadoc-docent-maven-plugin.version>
+        <maven-compiler-plugin.version>3.14.1</maven-compiler-plugin.version>
         <maven-install-plugin.version>3.1.4</maven-install-plugin.version>
         <maven-jar-plugin.version>3.4.2</maven-jar-plugin.version>
         <maven-javadoc-plugin.version>3.11.3</maven-javadoc-plugin.version>
         <maven-resources-plugin.version>3.3.1</maven-resources-plugin.version>
         <maven-source-plugin.version>3.3.1</maven-source-plugin.version>
         <maven-gpg-plugin.version>3.2.8</maven-gpg-plugin.version>
-        <central-publishing-maven-plugin.version>0.8.0</central-publishing-maven-plugin.version>
+        <central-publishing-maven-plugin.version>0.10.0</central-publishing-maven-plugin.version>
     </properties>
 
     <dependencyManagement>
@@ -227,6 +227,10 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven-compiler-plugin.version}</version>
                 <configuration>
+                    <compilerArgs>
+                        <arg>-parameters</arg>
+                        <arg>-Xlint:unchecked</arg>
+                    </compilerArgs>
                     <excludes>
                         <exclude>**/._*</exclude>
                     </excludes>
